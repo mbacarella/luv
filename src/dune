@@ -4,4 +4,5 @@
  (libraries luv.c result)
  (flags (:standard -w -49 -open Result)))
 
-(documentation)
+(documentation
+ (package luv))
