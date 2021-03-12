@@ -103,8 +103,8 @@ let tests = [
         Luv.Loop.now loop
         |> Unsigned.UInt64.to_int
         |> fun time ->
-          if time <= 0 then
-            Alcotest.fail "libuv time not positive"
+          if time < 0 then
+            Alcotest.fail "libuv time negative"
       end
     end;
 
